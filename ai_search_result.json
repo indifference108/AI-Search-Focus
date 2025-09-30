@@ -1,241 +1,241 @@
 [
     {
-    "query": "what date is it today?",
-    "results": {
-      "Bocha": [
-        {
-          "date": "25-09-29 18:08:06",
-          "time": 6838.9,
-          "content": "“What date is it today?” 意思是“今天几号？”，是用于询问具体日期的常用英语表达。\n\n在英语里，询问日期有多种常见句型，“What date is it today?” 就是其中之一，此外还有 “What's the date today?” 等[引用:1][引用:3]。“date” 侧重于确切的日期，也就是几月几号；而 “day” 常用来询问星期几，比如 “What day is it today?” 意思是 “今天星期几？”[引用:4][引用:9]。当回答 “What date is it today?” 时，可直接说出具体日期，例如 “October the third”（10月3日）[引用:6]。 ",
-          "references": [
-            "https://baike.sogou.com/v7992854.htm",
-            "https://www.shuashuati.com/ti/437b202e6ed84f888475732da439574f.html?fm=855dbd3cb497fd037a76b82f4563ea74",
-            "http://www.syjlp.com/jiedu/371525.html",
-            "https://www.zybang.com/question/527768ffb2cf7f3c2014897b12c50f36.html",
-            "https://www.douyin.com/qishui/playlist/7473384618893281280",
-            "https://www.zybang.com/question/df4b97dab68998f71e1df1bce0c7ea97.html",
-            "https://zybang.com/question/b704bdd7103a5490f337d12d57d9c8f7.html",
-            "https://new.qq.com/rain/a/20250831A01E9X00",
-            "https://www.zybang.com/question/5df5c7661653a4b7eb562264ede1014b.html",
-            "https://www.shuashuati.com/ti/78b69808db4640ea87dc6621078faeda.html?fm=bds74f118f71a2cac5643fd10c4b7815678"
-          ]
-        },
-        {
-          "date": "25-10-01 00:08:06",
-          "time": 8808.2,
-          "content": "“What date is it today?” 这句话的意思是 “今天几号？”。\n\n在英语里，询问日期有多种常见句型，“What date is it today?” 就是其中之一，此外还有 “What's the date today?” 等表达方式 [引用:2]。需要注意的是，“date” 与 “day” 含义有别，“date” 侧重于确切的日期，即几月几号；而 “day” 用于询问星期几，比如 “What day is it today?” 问的就是 “今天星期几？” [引用:4][引用:10]。当有人用 “What date is it today?” 询问时，回答可以简单直接，例如若当天是 10 月 3 日，就可回答 “October the third” [引用:7]。 ",
-          "references": [
-            "https://baike.sogou.com/v7992854.htm",
-            "http://www.syjlp.com/jiedu/371525.html",
-            "https://www.shuashuati.com/ti/34e6df9795cd4618a8c3524dba860e53.html?fm=bdse85544ac48bd5758a4a48819eb60f93f",
-            "https://www.zybang.com/question/527768ffb2cf7f3c2014897b12c50f36.html",
-            "https://www.shuashuati.com/ti/437b202e6ed84f888475732da439574f.html?fm=855dbd3cb497fd037a76b82f4563ea74",
-            "https://www.douyin.com/qishui/playlist/7473384618893281280",
-            "https://www.zybang.com/question/df4b97dab68998f71e1df1bce0c7ea97.html",
-            "https://zybang.com/question/b704bdd7103a5490f337d12d57d9c8f7.html",
-            "https://new.qq.com/rain/a/20250831A01E9X00",
-            "https://www.zybang.com/question/5df5c7661653a4b7eb562264ede1014b.html"
-          ]
+        "query": "what date is it today?",
+        "results": {
+            "Bocha": [
+                {
+                    "date": "25-09-29 18:08:06",
+                    "time": 6838.9,
+                    "content": "“What date is it today?” 意思是“今天几号？”，是用于询问具体日期的常用英语表达。\n\n在英语里，询问日期有多种常见句型，“What date is it today?” 就是其中之一，此外还有 “What's the date today?” 等[引用:1][引用:3]。“date” 侧重于确切的日期，也就是几月几号；而 “day” 常用来询问星期几，比如 “What day is it today?” 意思是 “今天星期几？”[引用:4][引用:9]。当回答 “What date is it today?” 时，可直接说出具体日期，例如 “October the third”（10月3日）[引用:6]。 ",
+                    "references": [
+                        "https://baike.sogou.com/v7992854.htm",
+                        "https://www.shuashuati.com/ti/437b202e6ed84f888475732da439574f.html?fm=855dbd3cb497fd037a76b82f4563ea74",
+                        "http://www.syjlp.com/jiedu/371525.html",
+                        "https://www.zybang.com/question/527768ffb2cf7f3c2014897b12c50f36.html",
+                        "https://www.douyin.com/qishui/playlist/7473384618893281280",
+                        "https://www.zybang.com/question/df4b97dab68998f71e1df1bce0c7ea97.html",
+                        "https://zybang.com/question/b704bdd7103a5490f337d12d57d9c8f7.html",
+                        "https://new.qq.com/rain/a/20250831A01E9X00",
+                        "https://www.zybang.com/question/5df5c7661653a4b7eb562264ede1014b.html",
+                        "https://www.shuashuati.com/ti/78b69808db4640ea87dc6621078faeda.html?fm=bds74f118f71a2cac5643fd10c4b7815678"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:08:06",
+                    "time": 8808.2,
+                    "content": "“What date is it today?” 这句话的意思是 “今天几号？”。\n\n在英语里，询问日期有多种常见句型，“What date is it today?” 就是其中之一，此外还有 “What's the date today?” 等表达方式 [引用:2]。需要注意的是，“date” 与 “day” 含义有别，“date” 侧重于确切的日期，即几月几号；而 “day” 用于询问星期几，比如 “What day is it today?” 问的就是 “今天星期几？” [引用:4][引用:10]。当有人用 “What date is it today?” 询问时，回答可以简单直接，例如若当天是 10 月 3 日，就可回答 “October the third” [引用:7]。 ",
+                    "references": [
+                        "https://baike.sogou.com/v7992854.htm",
+                        "http://www.syjlp.com/jiedu/371525.html",
+                        "https://www.shuashuati.com/ti/34e6df9795cd4618a8c3524dba860e53.html?fm=bdse85544ac48bd5758a4a48819eb60f93f",
+                        "https://www.zybang.com/question/527768ffb2cf7f3c2014897b12c50f36.html",
+                        "https://www.shuashuati.com/ti/437b202e6ed84f888475732da439574f.html?fm=855dbd3cb497fd037a76b82f4563ea74",
+                        "https://www.douyin.com/qishui/playlist/7473384618893281280",
+                        "https://www.zybang.com/question/df4b97dab68998f71e1df1bce0c7ea97.html",
+                        "https://zybang.com/question/b704bdd7103a5490f337d12d57d9c8f7.html",
+                        "https://new.qq.com/rain/a/20250831A01E9X00",
+                        "https://www.zybang.com/question/5df5c7661653a4b7eb562264ede1014b.html"
+                    ]
+                }
+            ],
+            "Deepseek": [
+                {
+                    "date": "25-09-30 23:07:02",
+                    "time": 3782.9,
+                    "content": "Today's date is Tuesday, September 30, 2025.  \n\nIn the Chinese lunar calendar, it corresponds to the ninth day of the eighth month in the year 乙巳 (Yisi). Additionally, this date marks China's Martyrs' Memorial Day.  \n\nLet me know if you'd like further details about the day's significance or related events.",
+                    "references": []
+                },
+                {
+                    "date": "25-10-01 00:08:02",
+                    "time": 3923.3,
+                    "content": "Today's date is **October 1, 2025** (Wednesday, CST).  \n\nThe provided references do not directly address the current date, but the system's timestamp confirms the date as of the query time (00:07:59 CST). No further calculation or adjustment is needed.  \n\nLet me know if you need additional details.",
+                    "references": [
+                        "https://chejiahao.m.autohome.com.cn/pingan/chejiahao/detailinfo/21964761",
+                        "https://www.bilibili.com/video/BV1vMYVzcEaW/?bsource=toutiao_bilibilih5&spm_id_from=333.788.recommend_more_video.3",
+                        "https://m.7cxk.com/p-4035974.html",
+                        "https://m.hupu.com/bbs/61275285-5.html",
+                        "https://m.xflapp.com/blog/i7190231649995457084"
+                    ]
+                }
+            ],
+            "Exa": [
+                {
+                    "date": "25-09-29 16:08:20",
+                    "time": 2793.9,
+                    "content": "Today is Monday, September 29, 2025. (Inch Calculator)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date"
+                    ]
+                },
+                {
+                    "date": "25-09-30 23:51:40",
+                    "time": 3406.3,
+                    "content": "Today is Tuesday, September 30, 2025. (Inch Calculator, Our Happy Corner)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date",
+                        "https://ourhappycorner.com/todays-date"
+                    ]
+                },
+                {
+                    "date": "25-09-30 23:57:03",
+                    "time": 3295.2,
+                    "content": "Today is Tuesday, September 30, 2025. It is day 273 of the year. (Inch Calculator)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date"
+                    ]
+                },
+                {
+                    "date": "25-09-30 23:58:03",
+                    "time": 3727.0,
+                    "content": "Today is Tuesday, September 30, 2025. (Inch Calculator)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:03:25",
+                    "time": 3326.9,
+                    "content": "Today is Tuesday, September 30, 2025. (Inch Calculator, Saturday Gift)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date",
+                        "https://www.saturdaygift.com/todays-date"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:03:45",
+                    "time": 3552.9,
+                    "content": "Today is Tuesday, September 30, 2025. (Inch Calculator, Saturday Gift) Today is day 273 of the year 2025. (Inch Calculator)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date",
+                        "https://www.saturdaygift.com/todays-date"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:08:02",
+                    "time": 4060.5,
+                    "content": "Today is Tuesday, September 30, 2025. It is day 273 of the year, with 92 days remaining. (Inch Calculator, What Is Today's Date? - Saturday Gift)\n",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date",
+                        "https://www.saturdaygift.com/todays-date"
+                    ]
+                }
+            ],
+            "Google": [
+                {
+                    "date": "25-09-29 18:02:01",
+                    "time": 1736.3,
+                    "content": "Today's date is Monday, September 29, 2025.",
+                    "references": []
+                },
+                {
+                    "date": "25-10-01 00:07:59",
+                    "time": 1327.6,
+                    "content": "Today is Tuesday, September 30, 2025.",
+                    "references": []
+                }
+            ],
+            "GPT-5-Search": [
+                {
+                    "date": "25-09-29 18:08:23",
+                    "time": 29345.9,
+                    "content": "Today is Monday, September 29, 2025.",
+                    "references": [
+                        "https://time.is/",
+                        "https://www.timeanddate.com/worldclock/",
+                        "https://time.gov/"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:08:23",
+                    "time": 25345.9,
+                    "content": "Today is September 30, 2025 (date may vary by time zone).",
+                    "references": [
+                        "https://time.is/",
+                        "https://www.timeanddate.com/worldclock/",
+                        "https://worldtimeapi.org/api/ip"
+                    ]
+                }
+            ],
+            "Perplexity": [
+                {
+                    "date": "25-09-29 16:08:20",
+                    "time": 3124.6,
+                    "content": "Today is **Monday, September 29, 2025**[1][2][6].",
+                    "references": [
+                        "https://en.wikipedia.org/wiki/September_29",
+                        "https://isotropic.org/date/",
+                        "https://www.timeanddate.com/countdown/to?month=9&day=29&year",
+                        "https://www.inchcalculator.com/what-is-todays-date/",
+                        "https://www.timeanddate.com/calendar/monthly.html?year=2025&month=9&country=1",
+                        "https://www.datetoday.net",
+                        "https://www.calendarr.com/united-states/calendar-september-2025/",
+                        "https://www.calendardate.com/todays.htm",
+                        "https://www.wincalendar.com/Calendar/Date/September-29-2025",
+                        "https://calendar.google.com/calendar/u/0/r/day",
+                        "https://www.calendar-365.com/calendar/2025/September.html",
+                        "https://www.timeanddate.com",
+                        "https://www.daysoftheyear.com/days/sept/29/",
+                        "https://www.saturdaygift.com/todays-date/",
+                        "https://howlongagogo.com/date/2025/september/29",
+                        "https://www.rapidtables.com/tools/todays-date.html",
+                        "https://www.checkiday.com/9/29/2025",
+                        "https://www.epochconverter.com/daynumbers",
+                        "https://www.drikpanchang.com/panchang/day-panchang.html?date=29%2F09%2F2025",
+                        "https://ourhappycorner.com/todays-date/"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:08:00",
+                    "time": 2724.6,
+                    "content": "The date today is **Tuesday, September 30, 2025**. This corresponds to the 273rd day of the year in the Gregorian calendar, with 92 days remaining until the end of the year[1][2].",
+                    "references": [
+                        "https://en.wikipedia.org/wiki/September_30",
+                        "https://isotropic.org/date/",
+                        "https://www.timeanddate.com/calendar/monthly.html?year=2025&month=9&country=1",
+                        "https://www.inchcalculator.com/what-is-todays-date/",
+                        "https://www.timeanddate.com/countdown/to?msg=j88tutcom%27s+birthday&year=2025&month=9&day=30&hour=0&min=0&sec=0&fromtheme=birthday",
+                        "https://www.datetoday.net",
+                        "https://www.calendarr.com/united-states/calendar-september-2025/",
+                        "https://www.calendardate.com/todays.htm",
+                        "https://www.calendar-365.com/calendar/2025/September.html",
+                        "https://calendar.google.com/calendar/u/0/r/day",
+                        "https://www.wincalendar.com/Calendar/Date/September-30-2025",
+                        "https://www.timeanddate.com",
+                        "https://www.daysoftheyear.com/days/sept/30/",
+                        "https://www.rapidtables.com/tools/todays-date.html",
+                        "https://www.drikpanchang.com/panchang/day-panchang.html?date=30%2F09%2F2025",
+                        "https://www.saturdaygift.com/todays-date/",
+                        "https://www.epochconverter.com/daynumbers",
+                        "https://ourhappycorner.com/todays-date/"
+                    ]
+                }
+            ],
+            "Tavily": [
+                {
+                    "date": "25-09-29 18:38:21",
+                    "time": 3212.9,
+                    "content": "Today's date is September 29, 2025. It is Monday. The year 2025 is not a leap year.",
+                    "references": [
+                        "https://www.inchcalculator.com/what-is-todays-date/",
+                        "https://isotropic.org/date/",
+                        "https://www.saturdaygift.com/todays-date/",
+                        "https://www.datetoday.net/",
+                        "https://ourhappycorner.com/todays-date/"
+                    ]
+                },
+                {
+                    "date": "25-10-01 00:08:01",
+                    "time": 3522.0,
+                    "content": "Today is September 30, 2025. It is the 273rd day of the year. The current date is 09-30-2025.",
+                    "references": [
+                        "https://www.saturdaygift.com/todays-date/",
+                        "https://ourhappycorner.com/todays-date/",
+                        "https://www.inchcalculator.com/what-is-todays-date/",
+                        "https://www.datetoday.net/",
+                        "https://isotropic.org/date/"
+                    ]
+                }
+            ]
         }
-      ],
-      "Deepseek": [
-        {
-          "date": "25-09-30 23:07:02",
-          "time": 3782.9,
-          "content": "Today's date is Tuesday, September 30, 2025.  \n\nIn the Chinese lunar calendar, it corresponds to the ninth day of the eighth month in the year 乙巳 (Yisi). Additionally, this date marks China's Martyrs' Memorial Day.  \n\nLet me know if you'd like further details about the day's significance or related events.",
-          "references": []
-        },
-        {
-          "date": "25-10-01 00:08:02",
-          "time": 3923.3,
-          "content": "Today's date is **October 1, 2025** (Wednesday, CST).  \n\nThe provided references do not directly address the current date, but the system's timestamp confirms the date as of the query time (00:07:59 CST). No further calculation or adjustment is needed.  \n\nLet me know if you need additional details.",
-          "references": [
-            "https://chejiahao.m.autohome.com.cn/pingan/chejiahao/detailinfo/21964761",
-            "https://www.bilibili.com/video/BV1vMYVzcEaW/?bsource=toutiao_bilibilih5&spm_id_from=333.788.recommend_more_video.3",
-            "https://m.7cxk.com/p-4035974.html",
-            "https://m.hupu.com/bbs/61275285-5.html",
-            "https://m.xflapp.com/blog/i7190231649995457084"
-          ]
-        }
-      ],
-      "Exa": [
-        {
-          "date": "25-09-29 16:08:20",
-          "time": 2793.9,
-          "content": "Today is Monday, September 29, 2025. (Inch Calculator)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date"
-          ]
-        },
-        {
-          "date": "25-09-30 23:51:40",
-          "time": 3406.3,
-          "content": "Today is Tuesday, September 30, 2025. (Inch Calculator, Our Happy Corner)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date",
-            "https://ourhappycorner.com/todays-date"
-          ]
-        },
-        {
-          "date": "25-09-30 23:57:03",
-          "time": 3295.2,
-          "content": "Today is Tuesday, September 30, 2025. It is day 273 of the year. (Inch Calculator)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date"
-          ]
-        },
-        {
-          "date": "25-09-30 23:58:03",
-          "time": 3727.0,
-          "content": "Today is Tuesday, September 30, 2025. (Inch Calculator)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date"
-          ]
-        },
-        {
-          "date": "25-10-01 00:03:25",
-          "time": 3326.9,
-          "content": "Today is Tuesday, September 30, 2025. (Inch Calculator, Saturday Gift)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date",
-            "https://www.saturdaygift.com/todays-date"
-          ]
-        },
-        {
-          "date": "25-10-01 00:03:45",
-          "time": 3552.9,
-          "content": "Today is Tuesday, September 30, 2025. (Inch Calculator, Saturday Gift) Today is day 273 of the year 2025. (Inch Calculator)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date",
-            "https://www.saturdaygift.com/todays-date"
-          ]
-        },
-        {
-          "date": "25-10-01 00:08:02",
-          "time": 4060.5,
-          "content": "Today is Tuesday, September 30, 2025. It is day 273 of the year, with 92 days remaining. (Inch Calculator, What Is Today's Date? - Saturday Gift)\n",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date",
-            "https://www.saturdaygift.com/todays-date"
-          ]
-        }
-      ],
-      "Google": [
-        {
-          "date": "25-09-29 18:02:01",
-          "time": 1736.3,
-          "content": "Today's date is Monday, September 29, 2025.",
-          "references": []
-        },
-        {
-          "date": "25-10-01 00:07:59",
-          "time": 1327.6,
-          "content": "Today is Tuesday, September 30, 2025.",
-          "references": []
-        }
-      ],
-      "GPT-5-Search": [
-        {
-          "date": "25-09-29 18:08:23",
-          "time": 29345.9,
-          "content": "Today is Monday, September 29, 2025.",
-          "references": [
-            "https://time.is/",
-            "https://www.timeanddate.com/worldclock/",
-            "https://time.gov/"
-          ]
-        },
-        {
-          "date": "25-10-01 00:08:23",
-          "time": 25345.9,
-          "content": "Today is September 30, 2025 (date may vary by time zone).",
-          "references": [
-            "https://time.is/",
-            "https://www.timeanddate.com/worldclock/",
-            "https://worldtimeapi.org/api/ip"
-          ]
-        }
-      ],
-      "Perplexity": [
-        {
-          "date": "25-09-29 16:08:20",
-          "time": 3124.6,
-          "content": "Today is **Monday, September 29, 2025**[1][2][6].",
-          "references": [
-            "https://en.wikipedia.org/wiki/September_29",
-            "https://isotropic.org/date/",
-            "https://www.timeanddate.com/countdown/to?month=9&day=29&year",
-            "https://www.inchcalculator.com/what-is-todays-date/",
-            "https://www.timeanddate.com/calendar/monthly.html?year=2025&month=9&country=1",
-            "https://www.datetoday.net",
-            "https://www.calendarr.com/united-states/calendar-september-2025/",
-            "https://www.calendardate.com/todays.htm",
-            "https://www.wincalendar.com/Calendar/Date/September-29-2025",
-            "https://calendar.google.com/calendar/u/0/r/day",
-            "https://www.calendar-365.com/calendar/2025/September.html",
-            "https://www.timeanddate.com",
-            "https://www.daysoftheyear.com/days/sept/29/",
-            "https://www.saturdaygift.com/todays-date/",
-            "https://howlongagogo.com/date/2025/september/29",
-            "https://www.rapidtables.com/tools/todays-date.html",
-            "https://www.checkiday.com/9/29/2025",
-            "https://www.epochconverter.com/daynumbers",
-            "https://www.drikpanchang.com/panchang/day-panchang.html?date=29%2F09%2F2025",
-            "https://ourhappycorner.com/todays-date/"
-          ]
-        },
-        {
-          "date": "25-10-01 00:08:00",
-          "time": 2724.6,
-          "content": "The date today is **Tuesday, September 30, 2025**. This corresponds to the 273rd day of the year in the Gregorian calendar, with 92 days remaining until the end of the year[1][2].",
-          "references": [
-            "https://en.wikipedia.org/wiki/September_30",
-            "https://isotropic.org/date/",
-            "https://www.timeanddate.com/calendar/monthly.html?year=2025&month=9&country=1",
-            "https://www.inchcalculator.com/what-is-todays-date/",
-            "https://www.timeanddate.com/countdown/to?msg=j88tutcom%27s+birthday&year=2025&month=9&day=30&hour=0&min=0&sec=0&fromtheme=birthday",
-            "https://www.datetoday.net",
-            "https://www.calendarr.com/united-states/calendar-september-2025/",
-            "https://www.calendardate.com/todays.htm",
-            "https://www.calendar-365.com/calendar/2025/September.html",
-            "https://calendar.google.com/calendar/u/0/r/day",
-            "https://www.wincalendar.com/Calendar/Date/September-30-2025",
-            "https://www.timeanddate.com",
-            "https://www.daysoftheyear.com/days/sept/30/",
-            "https://www.rapidtables.com/tools/todays-date.html",
-            "https://www.drikpanchang.com/panchang/day-panchang.html?date=30%2F09%2F2025",
-            "https://www.saturdaygift.com/todays-date/",
-            "https://www.epochconverter.com/daynumbers",
-            "https://ourhappycorner.com/todays-date/"
-          ]
-        }
-      ],
-      "Tavily": [
-        {
-          "date": "25-09-29 18:38:21",
-          "time": 3212.9,
-          "content": "Today's date is September 29, 2025. It is Monday. The year 2025 is not a leap year.",
-          "references": [
-            "https://www.inchcalculator.com/what-is-todays-date/",
-            "https://isotropic.org/date/",
-            "https://www.saturdaygift.com/todays-date/",
-            "https://www.datetoday.net/",
-            "https://ourhappycorner.com/todays-date/"
-          ]
-        },
-        {
-          "date": "25-10-01 00:08:01",
-          "time": 3522.0,
-          "content": "Today is September 30, 2025. It is the 273rd day of the year. The current date is 09-30-2025.",
-          "references": [
-            "https://www.saturdaygift.com/todays-date/",
-            "https://ourhappycorner.com/todays-date/",
-            "https://www.inchcalculator.com/what-is-todays-date/",
-            "https://www.datetoday.net/",
-            "https://isotropic.org/date/"
-          ]
-        }
-      ]
     }
-  }
 ]
