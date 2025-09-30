@@ -1,0 +1,4 @@
+openai
+requests[socks] 
+google.genai
+httpx
