@@ -1,4 +1,4 @@
-# AI-Search-Hub
+# AI-Search-Framework
 
 A unified framework integrating multiple AI-powered search engine APIs for experimentation and comparison.
 
