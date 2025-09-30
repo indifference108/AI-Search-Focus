@@ -32,8 +32,22 @@ A unified framework integrating multiple AI-powered search engine APIs for exper
    ```bash
    pip install -r requirements.txt
    ```
+3. Choose the Providers:
+   open your websearch.py and choose which engine you would like to use
+   ```Python
+   providers = [
+        ("Exa", exa_config),
+        ("GPT-5-Search", gpt_search_config),
+        ("Google", google_config),
+        ("Bocha", bocha_config),
+        ("Perplexity", perplexity_config),
+        ("Tavily", tavily_config),
+        ("Deepseek",deepseek_config),
+        # ("You",youcom_config)
+    ]
+   ```
 
-3. Run experiments:
+5. Run experiments:
 
    ```bash
    python websearch.py
