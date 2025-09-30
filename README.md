@@ -2,7 +2,7 @@
 
 <h1 align="center">🤖 AI-Search-Focus</h1>
 
-A unified framework integrating multiple AI-powered search engine APIs for experimentation and comparison.
+  A unified framework integrating multiple AI-powered search engine APIs for experimentation and comparison.
 
 ---
 
