@@ -1,8 +1,11 @@
 from keys import *
 from openai import OpenAI
-import requests,re,httpx,json
+import requests,re,httpx,json,time
 from google import genai
 from google.genai import types 
+from datetime import datetime
+
+SYSTEM_PROMPT = "Answer like an AI Search Engine. Give some references as you can."
 
 class ProviderConfig:
     def __init__(self, name, url, headers, build_payload, parse_response):
@@ -12,7 +15,8 @@ class ProviderConfig:
         self.build_payload = build_payload
         self.parse_response = parse_response
 
-def call_provider(config, query, system_prompt=None, extra=None):
+def call_provider(config, query, extra=None):
+    start = time.time() 
     extra = extra or {}
     
     # build payload
@@ -20,11 +24,11 @@ def call_provider(config, query, system_prompt=None, extra=None):
         grounding_tool = types.Tool(google_search=types.GoogleSearch())
         config_google = types.GenerateContentConfig(tools=[grounding_tool])
     elif config.name != "gpt_search":
-        payload = config.build_payload(query, system_prompt, extra) 
+        payload = config.build_payload(query,extra) 
         
-    # client mode
+    # client mode APIs
     if config.name == "exa":
-        client = OpenAI(base_url=config.url, api_key=config.headers["Authorization"].split(" ")[1])
+        client = OpenAI(base_url="https://api.exa.ai", api_key=config.headers["Authorization"].split(" ")[1])
         res = client.chat.completions.create(**payload)
         parsed = config.parse_response(res)
     elif config.name == "google":
@@ -33,18 +37,20 @@ def call_provider(config, query, system_prompt=None, extra=None):
         parsed = config.parse_response(res)
     elif config.name == "gpt_search":
         client = OpenAI(base_url="https://svip.xty.app/v1", api_key = GPT_KEY, http_client=httpx.Client(base_url="https://svip.xty.app/v1",follow_redirects=True))
-        res = client.chat.completions.create(model="gpt-5-search",messages = [{"role": "system","content": "Try to answer like an AI Search Engine.Reply with a json like {'content':' ','references': [urls(more than 1)]}"},{"role": "user","content": query}])
+        res = client.chat.completions.create(model="gpt-5-search",messages = [{"role": "system","content": SYSTEM_PROMPT + "Reply with a json like {'content':' ','references': [urls(more than 1)]}"},{"role": "user","content": query}])
         parsed = json.loads(res.choices[0].message.content)
     elif config.name == "deepseek":
         client = OpenAI(base_url="https://ark.cn-beijing.volces.com/api/v3/bots",api_key=DEEPSEEK_KEY)
-        res = client.chat.completions.create(model="bot-20250930112211-kjhmd",  messages=[{"role": "system", "content": "Try to answer like an AI Search Engine."},{"role": "user", "content": query}],)
+        res = client.chat.completions.create(model="bot-20250930112211-kjhmd",  messages=[{"role": "system", "content": SYSTEM_PROMPT},{"role": "user", "content": query}],)
         parsed = config.parse_response(res)
-    
-    # request mode
+    # request mode APIs
     else:
-        res = requests.post(config.url, headers=config.headers, json=payload, timeout=15)
+        res = requests.post(config.url, headers=config.headers, json=payload, timeout=20)
         parsed = config.parse_response(res.json())
-    
+        
+    end = time.time()
+    parsed["date"] = datetime.now().strftime("%y-%m-%d %H:%M:%S")
+    parsed["time"] = round((end - start) * 1000, 1)
     return parsed
 
 def parse_bocha_response(resp):
@@ -98,7 +104,7 @@ gpt_search_config = ProviderConfig(
     name="gpt_search",
     url=None,
     headers=None,
-    build_payload=lambda query, system_prompt, extra: {},
+    build_payload=lambda query, extra: {},
     parse_response=None,
 )
 
@@ -110,10 +116,10 @@ perplexity_config = ProviderConfig(
         "Authorization": f"Bearer {PERPLEXITY_API_KEY}",
         "Content-Type": "application/json"
     },
-    build_payload=lambda query, system_prompt, extra: {
+    build_payload=lambda query, extra: {
         "model": "sonar",
-        "messages": [{"role": "system", "content": system_prompt}] if system_prompt else [] +
-                    [{"role": "user", "content": query}],
+        "messages": [{"role": "system", "content": SYSTEM_PROMPT},
+                     {"role": "user", "content": query}],
         "search_domain": "perplexity"
     },
     parse_response=lambda r: {
@@ -125,12 +131,12 @@ perplexity_config = ProviderConfig(
 # =================    Exa     =================
 exa_config = ProviderConfig(
     name="exa",
-    url="https://api.exa.ai",
+    url=None,
     headers={"Authorization": f"Bearer {EXA_API_KEY}"},
-    build_payload=lambda query, system_prompt, extra: dict(
+    build_payload=lambda query, extra: dict(
         model="exa",
         messages=[
-            {"role": "system", "content": system_prompt or "You are a helpful assistant."},
+            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": query}
         ],
         extra_body={"text": True}
@@ -146,7 +152,7 @@ youcom_config = ProviderConfig(
         "Authorization": f"Bearer {YOUCOM_API_KEY}",
         "Content-Type": "application/json"
     },
-    build_payload=lambda query, system_prompt, extra: {
+    build_payload=lambda query, extra: {
         "agent": extra.get("agent", "express"),
         "input": query,
         "tools": [
@@ -176,7 +182,7 @@ tavily_config = ProviderConfig(
         "Content-Type": "application/json",
         "Authorization": f"Bearer {TAVILY_API_KEY}"
     },
-    build_payload=lambda query, system_prompt, extra: {
+    build_payload=lambda query, extra: {
         "query": query,
         "include_answer": "basic"
     },
@@ -213,7 +219,7 @@ bocha_config = ProviderConfig(
         "Authorization": f"Bearer {BOCHA_API_KEY}",
         "Content-Type": "application/json"
     },
-    build_payload=lambda query, system_prompt, extra: {
+    build_payload=lambda query, extra: {
         "query": query,
         "freshness": "noLimit",
         "answer": True,
@@ -227,10 +233,10 @@ deepseek_config = ProviderConfig(
     name="deepseek",
     url=None,
     headers=None,
-    build_payload=lambda query, system_prompt, extra: {
+    build_payload=lambda query, extra: {
     },
     parse_response=lambda r: {
         "content": r.choices[0].message.content,
-        "references": getattr(r, "references", [])
+        "references": [ref["url"] for ref in getattr(r, "references", []) if ref.get("url")]
     }
 )
