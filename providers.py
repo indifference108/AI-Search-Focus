@@ -21,8 +21,8 @@ def call_provider(config, query, system_prompt=None, extra=None):
         config_google = types.GenerateContentConfig(tools=[grounding_tool])
     elif config.name != "gpt_search":
         payload = config.build_payload(query, system_prompt, extra) 
-       
-    # client mode APIs
+        
+    # client mode
     if config.name == "exa":
         client = OpenAI(base_url=config.url, api_key=config.headers["Authorization"].split(" ")[1])
         res = client.chat.completions.create(**payload)
@@ -40,9 +40,9 @@ def call_provider(config, query, system_prompt=None, extra=None):
         res = client.chat.completions.create(model="bot-20250930112211-kjhmd",  messages=[{"role": "system", "content": "Try to answer like an AI Search Engine."},{"role": "user", "content": query}],)
         parsed = config.parse_response(res)
     
-    # request mode APIs
+    # request mode
     else:
-        res = requests.post(config.url, headers=config.headers, json=payload, timeout=20)
+        res = requests.post(config.url, headers=config.headers, json=payload, timeout=15)
         parsed = config.parse_response(res.json())
     
     return parsed
