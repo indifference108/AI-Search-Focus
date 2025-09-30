@@ -1,20 +1,57 @@
-# AI-Search-Framework
-This repository contains research code for measuring/searching AI search engines.
+# AI-Search-Hub
 
-## Usage
-1. Copy your API key -> `keys.py`.
-2. Install requirements: `pip install -r requirements.txt`
-3. Run experiments: `python run_experiments.py`
+A unified framework integrating multiple AI-powered search engine APIs for experimentation and comparison.
 
+---
 
-## Ethics & Responsible Use
-This project is intended for academic and defensive research only. Do **not** use the prompts or methods for malicious purposes. If you find a serious vulnerability, follow the security disclosure instructions in `SECURITY.md`.
+## 🔍 Supported Search Engines
 
-## Responsible Disclosure
-If you discover a security issue, please contact: indifference.mao@outlook.com
-We will respond within 7 business days. Do not publicly disclose issues until they've been addressed.
+| Engine                  | Status                        | Website                                                                                                                | API / Docs                                                                                                                                                                                                                                     |
+| ----------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GPT-5-Search            | ✅ Available                   | [chat.openai.com](https://chat.openai.com)                                                                             | —                                                                                                                                                                                                                                              |
+| Copilot                 | ❌ Unavailable                 | [Microsoft Copilot](https://www.microsoft.com/en-us/bing/copilot-search/?form=MA13XW&cs=1873324239)                    | —                                                                                                                                                                                                                                              |
+| Google Vertex AI Search | ✅ Available                   | [Vertex AI](https://ai.google/https://console.cloud.google.com/vertex-ai/tutorials?project=gen-lang-client-0224905204) | [API Key](https://console.cloud.google.com/apis/credentials/key/a98efe11-2b63-4869-8fbb-f1fbfe8bb1b8?project=gen-lang-client-0224905204) <br> [Docs](https://ai.google.dev/gemini-api/docs/google-search?hl=zh-cn)                             |
+| Perplexity              | ✅ Available                   | [perplexity.ai](https://www.perplexity.ai/)                                                                            | [API Key](https://www.perplexity.ai/account/api/keys)                                                                                                                                                                                          |
+| Bocha                   | ✅ Available                   | [bochaai.com](https://bochaai.com/)                                                                                    | [Docs](https://bocha-ai.feishu.cn/wiki/AT9VwqsrQinss7k84LQcKJY6nDh)                                                                                                                                                                            |
+| DeepSeek                | ✅ Available                   | [deepseek.com](https://deepseek.com/)                                                                                  | [Doc1](https://deepseek.csdn.net/67afbce39a0a3d048dcfac68.html) <br> [Doc2](https://console.volcengine.com/ark/region:ark+cn-beijing/assistant/edit?botType=NoCode&templateType=InfoSource&formType=edit&tab=Edit&id=bot-20250930112211-kjhmd) |
+| You.com                 | ❌ Unavailable (Network Error) | [you.com](https://you.com)                                                                                             | [API](https://api.you.com)                                                                                                                                                                                                                     |
+| Baidu                   | ❌ Unavailable                 | [chat.baidu.com](https://chat.baidu.com/)                                                                              | —                                                                                                                                                                                                                                              |
+| Exa                     | ✅ Available                   | [exa.ai](https://exa.ai/)                                                                                              | [Dashboard](https://dashboard.exa.ai/login?redirect=/)                                                                                                                                                                                         |
+| Tavity                  | ✅ Available                   | [tavity.com](http://tavity.com/home)                                                                                   | [Website](http://tavity.com/home)                                                                                                                                                                                                              |
 
-## Secrets Policy
-This repository never includes API keys. If you find an exposed credential, please notify maintainers immediately.
+---
 
+## 🚀 Getting Started
 
+1. Copy your API keys into `keys.py`.
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run experiments:
+
+   ```bash
+   python run_experiments.py
+   ```
+
+---
+
+## ⚖️ Ethics & Responsible Use
+
+This project is intended for **academic and defensive research only**. Do **not** use prompts or methods for malicious purposes.
+If you discover critical vulnerabilities, please follow the instructions in `SECURITY.md`.
+
+---
+
+## 📩 Responsible Disclosure
+
+If you find a security issue, contact: `indifference.mao@outlook.com`
+We will respond within **7 business days**. Please **do not publicly disclose issues** until they are resolved.
+
+---
+
+## 🔐 Secrets Policy
+
+This repository **never includes API keys**.
+If you find exposed credentials, please notify the maintainers immediately.
