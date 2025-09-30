@@ -1,0 +1,9 @@
+# keys can be used
+PERPLEXITY_API_KEY = ""
+EXA_API_KEY = ""
+TAVILY_API_KEY = ""
+GOOGLE_API_KEY = ""
+BOCHA_API_KEY = ""
+YOUCOM_API_KEY = ""
+GPT_KEY = ""
+DEEPSEEK_KEY = ""
