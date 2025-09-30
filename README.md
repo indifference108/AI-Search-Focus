@@ -40,7 +40,6 @@ A unified framework integrating multiple AI-powered search engine APIs for exper
 ## ⚖️ Ethics & Responsible Use
 
 This project is intended for **academic and defensive research only**. Do **not** use prompts or methods for malicious purposes.
-If you discover critical vulnerabilities, please follow the instructions in `SECURITY.md`.
 
 ---
 
