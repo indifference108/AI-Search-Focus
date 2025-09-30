@@ -49,23 +49,42 @@ Below is an example of the framework's output for a query. Sensitive data has be
 {
   "query": "what date is it today?",
   "results": {
-    "Google": {
-      "content": "Today's date is Monday, September 29, 2025.",
-      "references": []
-    },
-    "Tavity": {
-      "content": "Today's date is September 29, 2025. It is Monday. The year 2025 is not a leap year.",
-      "references": [
-        "https://example.com/date1",
-        "https://example.com/date2",
-        "https://example.com/date3",
-        "https://example.com/date4"
-      ]
-    },
-    "Perplexity": {
-      "content": "It is Monday, September 29, 2025.",
-      "references": []
-    }
+    "Bocha": [
+      {
+        "date": "2025-09-29 18:08:06",
+        "time": 6838.9,
+        "content": "",
+        "references": [
+          "https://example.com/ref1",
+          "https://example.com/ref2",
+          "https://example.com/ref3"
+        ]
+      }
+    ],
+    "Google": [
+      {
+        "date": "2025-09-29 18:09:10",
+        "time": 4123.5,
+        "content": "Today's date is Monday, September 29, 2025.",
+        "references": [
+          "https://example.com/ref1",
+          "https://example.com/ref2"
+        ]
+      }
+    ],
+    "Tavity": [
+      {
+        "date": "2025-09-29 18:10:00",
+        "time": 5234.7,
+        "content": "Today's date is September 29, 2025. It is Monday. The year 2025 is not a leap year.",
+        "references": [
+          "https://example.com/ref1",
+          "https://example.com/ref2",
+          "https://example.com/ref3",
+          "https://example.com/ref4"
+        ]
+      }
+    ]
   }
 }
 ```
