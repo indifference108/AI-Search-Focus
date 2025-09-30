@@ -1,4 +1,4 @@
-# sort the result json
+# sort
 import json
 import pandas as pd
 from collections import OrderedDict
