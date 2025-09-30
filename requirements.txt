@@ -2,4 +2,6 @@ openai
 requests[socks] 
 google.genai
 httpx
-tqdm
+pandas
+openpyxl
+pandas
