@@ -55,6 +55,38 @@ A unified framework integrating multiple AI-powered search engine APIs for exper
 
 ---
 
+## 📂 File Structure Overview
+
+Here's a brief introduction to the main files and folders in this project, to help you navigate and understand the framework easily. 🧭
+
+| File / Folder | Description | Notes |
+|---------------|-------------|-------|
+| `README.md` | Project overview and usage instructions | Always up-to-date guide |
+| `keys.py` | Store your API keys for different search engines 🔑 | **Do not commit real keys** |
+| `providers.py` | Configuration for each AI search engine provider | Add new engines here |
+| `queries.py` | Example queries used for testing / experiments | Can be extended for batch experiments |
+| `websearch.py` | Main script to run experiments and fetch results 🌐 | Uses selected providers to query and output JSON |
+| `requirements.txt` | Python dependencies 📦 | Install with `pip install -r requirements.txt` |
+| `ai_search_results.json` | Example or actual search results from experiments | Useful for reference and testing |
+
+✨ **Tips**:  
+- Keep `keys.py` secure, use placeholders in public repos.  
+- You can add new engines by updating `providers.py` and `websearch.py`.  
+- `ai_search_results.json` can be used for demo or testing without hitting real APIs.  
+---
+## 📝 Input Instructions
+
+To run queries in this framework, you simply fill in the Python array in `queries.py`. 🎯
+
+| File | Description | Notes |
+|------|-------------|-------|
+| `queries.py` | Contains the list of queries for experiments or testing | Edit the `queries` array directly in Python |
+
+✨ **Tips**:  
+- You can add as many queries as you want in the array.  
+- Ensure each query is a valid string.  
+- The framework will process all queries in the array sequentially and save the results in JSON format.
+---
 ## 🖼 Example Output
 
 Below is an example of the framework's output for a query. Sensitive data has been replaced with safe placeholders.
