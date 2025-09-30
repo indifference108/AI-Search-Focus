@@ -36,7 +36,7 @@ A unified framework integrating multiple AI-powered search engine APIs for exper
 3. Run experiments:
 
    ```bash
-   python run_experiments.py
+   python websearch.py
    ```
 
 ---
