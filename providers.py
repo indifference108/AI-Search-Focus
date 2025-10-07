@@ -36,6 +36,11 @@ def call_provider(config, query, extra=None):
         client = OpenAI(base_url="https://api.exa.ai", api_key=config.headers["Authorization"].split(" ")[1])
         res = client.chat.completions.create(**payload)
         parsed = config.parse_response(res)
+    elif config.name == "baidu":
+        client = OpenAI(api_key=BAIDU_API_KEY,base_url="https://qianfan.baidubce.com/v2/ai_search")
+        res = client.chat.completions.create(model="ernie-lite-pro-128k",messages=[{"role": "user", "content": query}],stream=False)
+        parsed = config.parse_response(res)
+        
     elif config.name == "google":
         client = genai.Client(api_key=GOOGLE_API_KEY)
         res = client.models.generate_content(model="gemini-2.5-flash",contents=query,config=config_google)
@@ -140,7 +145,6 @@ def _safe_json_parse(text: str):
     else:
         return {"content": str(data), "references": []}
 
-
 def parse_bocha_response(resp):
     content_list = []
     references = []
@@ -185,8 +189,34 @@ def parse_exa_response(r):
         "content": content_simplified,
         "references": references_list
     }
+    
+def parse_baidu_response(r):
+    content = ""
+    references = []
+    try:
+        if hasattr(r, "choices") and r.choices:
+            content = r.choices[0].message.content.strip()
+        if hasattr(r, "references"):
+            references = [ref.get("url") for ref in getattr(r, "references", []) if isinstance(ref, dict) and ref.get("url")]
+        elif hasattr(r.choices[0].message, "references"):
+            refs = getattr(r.choices[0].message, "references", [])
+            if isinstance(refs, list):
+                references = [ref.get("url") for ref in refs if isinstance(ref, dict) and ref.get("url")]
+        references = list(dict.fromkeys(references))
+    except Exception as e:
+        content = f"[ParseError] {e}\nRaw: {str(r)[:300]}"
+        references = []
 
+    return {"content": content, "references": references}
 
+# =================  Baidu   ====================
+baidu_config = ProviderConfig(
+    name="baidu",
+    url=None,  
+    headers=None,
+    build_payload=lambda query, extra: {},
+    parse_response=parse_baidu_response
+)
 # ================ GPT-5 Search =================
 gpt_search_config = ProviderConfig(
     name="gpt_search",
