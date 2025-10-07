@@ -1,11 +1,11 @@
 # websearch.py
-import logging,json,os,time
+import logging,json,os,time,warnings
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 from providers import *  
 from queries import queries  
-
+warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -25,14 +25,15 @@ query_index = {entry["query"]: entry for entry in db}
 
 if __name__ == "__main__":
     providers = [
-        ("Exa", exa_config),
-        ("GPT-5-Search", gpt_search_config),
-        ("Google", google_config),
-        ("Bocha", bocha_config),
-        ("Perplexity", perplexity_config),
-        ("Tavily", tavily_config),
-        ("Deepseek",deepseek_config),
-        # ("You",youcom_config)
+        # ("Exa", exa_config),
+        # ("GPT-5-Search", gpt_search_config),
+        # ("Google", google_config),
+        # ("Bocha", bocha_config),
+        # ("Perplexity", perplexity_config),
+        # ("Tavily", tavily_config),
+        # ("Deepseek",deepseek_config),
+        # ("Kimi",kimi_config)
+        ("Baidu",baidu_config),
     ]
 
     for query in tqdm(queries, desc="Processing Queries", ncols=100):
@@ -56,7 +57,7 @@ if __name__ == "__main__":
                     
                 except Exception as e:
                     engine_result = {
-                        "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "date": datetime.now().strftime("%y-%m-%d %H:%M:%S"),
                         "time": 0,
                         "content": "",
                         "references": [],
