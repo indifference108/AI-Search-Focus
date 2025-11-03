@@ -20,7 +20,7 @@ Our website : https://russel-transmundane-orally.ngrok-free.dev
 | You.com                 | ❌ Unavailable (Network Error) | [you.com](https://you.com)                                                | [API](https://api.you.com)                                                                                                              | YouChat AI (Claude-like)            | You.com Search            |
 | Baidu                   | ✅ Available                   | [chat.baidu.com](https://chat.baidu.com/)                                 | [Console](https://console.bce.baidu.com/qianfan/ais/console/presetService)                                                                                                                                       | Ernie-Lite-Pro-128k                    | Baidu Search              |
 | Exa                     | ✅ Available                   | [exa.ai](https://exa.ai/)                                                 | [Dashboard](https://dashboard.exa.ai/login?redirect=/)                                                                                  | Exa AI Model                        | Exa Search Engine         |
-| Tavity                  | ✅ Available                   | [tavity.com](http://tavity.com/home)                                      | [Website](http://tavity.com/home)                                                                                                       | Unknown                             | Tavity Search             |                                                               
+| Tavily                  | ✅ Available                   | [Tavily.com](http://Tavily.com/home)                                      | [Website](http://Tavily.com/home)                                                                                                       | Unknown                             | Tavily Search             |                                                               
 ---
 
 ## 🚀 Getting Started
@@ -118,7 +118,7 @@ Below is an example of the framework's output for a query. Sensitive data has be
         ]
       }
     ],
-    "Tavity": [
+    "Tavily": [
       {
         "date": "2025-09-29 18:10:00",
         "time": 5234.7,
